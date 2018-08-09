@@ -9,6 +9,13 @@ get_header(); ?>
 	<h2><?php the_title(); ?></h2>
 	<hr>
 
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 	<div class="main_container">
 		<div class="sidebar">
 			<?php if (function_exists('dynamic_sidebar')) {dynamic_sidebar('side_panel');} ?>
